@@ -1,0 +1,94 @@
+nav{
+    /* background-color: #ffffff;
+    box-shadow: 3px 3px 5px rgba(79, 66, 66, 0.1);
+    border-bottom: 1px solid #000958; */
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 100px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000958;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+li img{
+    height: 40px;
+    width: 40px;
+}
+
+.cor-icone{
+    filter: invert(11%) sepia(51%) saturate(4620%) hue-rotate(229deg) brightness(76%) contrast(100%);
+    /* Para alterarmos a cor de um ícone svg devemos converter o hexadecimal em um filtro CSS */
+}
+
+/* Barra lateral (sidebar) */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ffffff2e;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+/* Responsividade */
+
+@media(max-width:700px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+    
+}
+
+@media(max-width: 500px){
+    .sidebar{
+        width: 100%;
+    }
+}
