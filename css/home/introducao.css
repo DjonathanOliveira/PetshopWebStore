@@ -30,3 +30,42 @@
 .introducao-conteudo h2{
     font-weight: 300;
 }
+
+.introducao-pesquisa{
+    display: flex;
+    align-items: center;
+    /* margin-right: 25px; */
+    /* margin-left: 25px; */
+}
+
+.pesquisa{
+    background-color: #e7e7e7;
+    display: flex;
+    border-radius: 20px;
+    /* width: 100%; */
+    align-items: center;
+    margin-top: 22px;
+    padding: 10px 20px;
+}
+
+.pesquisa:hover{
+    background-color: #d6d6d6;
+    transition: 0.6s ease;
+}
+
+.pesquisa input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.pesquisa button{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+}
