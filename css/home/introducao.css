@@ -46,11 +46,12 @@
     align-items: center;
     margin-top: 22px;
     padding: 10px 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.266);
 }
 
 .pesquisa:hover{
     background-color: #d6d6d6;
-    transition: 0.6s ease;
+    transition: 0.9s ease in;
 }
 
 .pesquisa input{
@@ -67,5 +68,5 @@
     background: transparent;
     cursor: pointer;
     border: none;
-    padding: 8px 12px;
+    padding: 12px 16px;
 }
